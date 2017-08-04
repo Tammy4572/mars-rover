@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
 
 
-class ImageDisplay extends Component {
-    constructor(props) {
-        super(props)
-
-    }
-
+export default class ImageDisplay extends Component {
+ 
     render() {
         let { data } = this.props;
         let renderImages = data.map((image) => {
@@ -25,5 +21,3 @@ class ImageDisplay extends Component {
         );
     }
 }
-
-export default ImageDisplay;
